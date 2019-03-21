@@ -8,7 +8,7 @@ class Student
     @grade = grade
     @id = id
   end
-  
+
   def self.create_table
     sql = <<-SQL
 
@@ -23,7 +23,7 @@ class Student
 
   def self.drop_table
     sql = <<-SQL
-    DELETE FROM students 
+    DELETE FROM students
     WHERE id is ?
     SQL
     DB[:conn].execute(sql)
