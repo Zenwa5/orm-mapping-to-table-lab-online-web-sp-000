@@ -27,4 +27,9 @@ class Student
     SQL
     DB[:conn].execute(sql)
   end
+
+  def self.save
+    sql = <<-SQL
+    SQL
+    DB[:conn].execute.(sql)
 end
